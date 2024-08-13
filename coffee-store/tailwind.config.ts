@@ -9,12 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+        gradient: 'url("/static/background.png")',
     },
+      colors: {
+        purple: {
+        "951": "#5755eb",
+      },
+      gray: {
+        951: 'hsla(0, 0%, 100%, 0.04)',
+        952: '#373b64',
+      },
+      
+    }
+
+
+  }
+    
   },
   plugins: [],
 };
+
 export default config;
